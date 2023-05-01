@@ -14,15 +14,7 @@ if ( have_posts() ) :
 	 * properly with a call to rewind_posts().
 	 */
 	the_post();
-?>
-	<header class="page-header">
-		<h1 class="page-title author">
-			<?php
-				printf( esc_html__( 'Author Archives: %s', 'my-theme' ), get_the_author() );
-			?>
-		</h1>
-	</header>
-<?php
+
 	get_template_part( 'author', 'bio' );
 
 	/**

@@ -11,7 +11,7 @@ if ( get_the_author_meta( 'description' ) ) :
 			<h2>
 				<?php
 					echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'themes_starter_author_bio_avatar_size', 48 ) ) . '&nbsp;';
-					printf( esc_html__( 'About %s', 'my-theme' ), get_the_author() );
+					printf( esc_html__( 'Об %s', 'them-es-starter-theme-bootstrap-5' ), get_the_author() );
 				?>
 			</h2>
 			<div class="author-description">
@@ -20,30 +20,22 @@ if ( get_the_author_meta( 'description' ) ) :
 			<div class="author-links">
 				<?php
 					if ( ! empty( get_the_author_meta( 'user_url' ) ) ) :
-						printf( '<a href="%s" class="www btn btn-secondary btn-sm">' . esc_html__( 'Website', 'my-theme' ) . '</a>', esc_url( get_the_author_meta( 'user_url' ) ) );
+						printf( '<a href="%s" class="www btn btn-secondary btn-sm">' . esc_html__( 'Сайт', 'them-es-starter-theme-bootstrap-5' ) . '</a>', esc_url( get_the_author_meta( 'user_url' ) ) );
 					endif;
 
 					// Add new Profile fields for Users in functions.php
 					$fields = array(
 						array(
-							'meta'  => 'facebook_profile',
-							'label' => 'Facebook',
+							'meta'  => 'vk_profile',
+							'label' => 'VK',
 						),
 						array(
-							'meta'  => 'twitter_profile',
-							'label' => 'Twitter',
+							'meta'  => 'telegram_profile',
+							'label' => 'Telegram',
 						),
 						array(
-							'meta'  => 'linkedin_profile',
-							'label' => 'LinkedIn',
-						),
-						array(
-							'meta'  => 'xing_profile',
-							'label' => 'Xing',
-						),
-						array(
-							'meta'  => 'github_profile',
-							'label' => 'GitHub',
+							'meta'  => 'instagram_profile',
+							'label' => 'Instagram',
 						),
 					);
 

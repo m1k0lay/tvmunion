@@ -18,6 +18,7 @@
 			endif;
 		?>
 	</header><!-- /.entry-header -->
+	
 	<div class="entry-content">
 		<?php
 			if ( has_post_thumbnail() ) :
@@ -26,28 +27,27 @@
 
 			the_content();
 
-			wp_link_pages( array( 'before' => '<div class="page-link"><span>' . esc_html__( 'Pages:', 'my-theme' ) . '</span>', 'after' => '</div>' ) );
+			wp_link_pages( array( 'before' => '<div class="page-link"><span>' . esc_html__( 'Страниц:', 'them-es-starter-theme-bootstrap-5' ) . '</span>', 'after' => '</div>' ) );
 		?>
 	</div><!-- /.entry-content -->
 
 	<?php
-		edit_post_link( __( 'Edit', 'my-theme' ), '<span class="edit-link">', '</span>' );
+		edit_post_link( __( 'Изменить', 'them-es-starter-theme-bootstrap-5' ), '<span class="edit-link">', '</span>' );
 	?>
-
 	<footer class="entry-meta">
 		<hr>
 		<?php
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'my-theme' ) );
+			$category_list = get_the_category_list( __( ', ', 'them-es-starter-theme-bootstrap-5' ) );
 
 			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'my-theme' ) );
+			$tag_list = get_the_tag_list( '', __( ', ', 'them-es-starter-theme-bootstrap-5' ) );
 			if ( '' != $tag_list ) :
-				$utility_text = __( 'This entry was posted in %1$s and tagged %2$s by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'my-theme' );
+				$utility_text = __( 'Эта запись была опубликована в категории %1$s и отмечена меткой %2$s автором <a href="%6$s">%5$s</a>. <a href="%3$s" title="Ссылка на %4$s" rel="bookmark">Ссылка</a>.', 'them-es-starter-theme-bootstrap-5' );
 			elseif ( '' != $category_list ) :
-				$utility_text = __( 'This entry was posted in %1$s by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'my-theme' );
+				$utility_text = __( 'Эта запись была опубликована в категории %1$s автором <a href="%6$s">%5$s</a>. <a href="%3$s" title="Ссылка на %4$s" rel="bookmark">Ссылка</a>.', 'them-es-starter-theme-bootstrap-5' );
 			else :
-				$utility_text = __( 'This entry was posted by <a href="%6$s">%5$s</a>. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'my-theme' );
+				$utility_text = __( 'Эта запись была опубликована автором <a href="%6$s">%5$s</a>. <a href="%3$s" title="Ссылка на %4$s" rel="bookmark">Ссылка</a>.', 'them-es-starter-theme-bootstrap-5' );
 			endif;
 
 			printf(

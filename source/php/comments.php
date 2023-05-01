@@ -18,7 +18,7 @@ if ( post_password_required() ) {
 	?>
 		<h2 id="comments-title">
 			<?php
-				esc_html_e( 'No Comments yet!', 'my-theme' );
+				esc_html_e( 'Нет комментариев', 'them-es-starter-theme-bootstrap-5' );
 			?>
 		</h2>
 	<?php
@@ -30,16 +30,16 @@ if ( post_password_required() ) {
 			<?php
 				$comments_number = get_comments_number();
 				if ( '1' === $comments_number ) {
-					printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'my-theme' ), get_the_title() );
+					printf( _x( 'Ответить &ldquo;%s&rdquo;', 'comments title', 'them-es-starter-theme-bootstrap-5' ), get_the_title() );
 				} else {
 					printf(
 						/* translators: 1: number of comments, 2: post title */
 						_nx(
-							'%1$s Reply to &ldquo;%2$s&rdquo;',
-							'%1$s Replies to &ldquo;%2$s&rdquo;',
+							'%1$s Ответить &ldquo;%2$s&rdquo;',
+							'%1$s Ответы &ldquo;%2$s&rdquo;',
 							$comments_number,
 							'comments title',
-							'my-theme'
+							'them-es-starter-theme-bootstrap-5'
 						),
 						number_format_i18n( $comments_number ),
 						get_the_title()
@@ -51,9 +51,9 @@ if ( post_password_required() ) {
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav id="comment-nav-above">
-			<h1 class="assistive-text"><?php esc_html_e( 'Comment navigation', 'my-theme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'my-theme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'my-theme' ) ); ?></div>
+			<h1 class="assistive-text"><?php esc_html_e( 'Навигация по комментариям', 'them-es-starter-theme-bootstrap-5' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Ранние комментарии', 'them-es-starter-theme-bootstrap-5' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Поздние комментарии &rarr;', 'them-es-starter-theme-bootstrap-5' ) ); ?></div>
 		</nav>
 		<?php
 			endif;
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 				 * to use theme_comment() to format the comments.
 				 * If you want to overload this in a child theme then you can
 				 * define theme_comment() and that will be used instead.
-				 * See theme_comment() in my-theme/functions.php for more.
+				 * See theme_comment() in them-es-starter-theme-bootstrap-5/functions.php for more.
 				 */
 				wp_list_comments( array( 'callback' => 'themes_starter_comment' ) );
 			?>
@@ -74,9 +74,9 @@ if ( post_password_required() ) {
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text"><?php esc_html_e( 'Comment navigation', 'my-theme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'my-theme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'my-theme' ) ); ?></div>
+			<h1 class="assistive-text"><?php esc_html_e( 'Навигация по комментариям', 'them-es-starter-theme-bootstrap-5' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Ранние комментарии', 'them-es-starter-theme-bootstrap-5' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Поздние комментарии &rarr;', 'them-es-starter-theme-bootstrap-5' ) ); ?></div>
 		</nav>
 		<?php
 			endif;
@@ -87,7 +87,7 @@ if ( post_password_required() ) {
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<h2 id="comments-title" class="nocomments"><?php esc_html_e( 'Comments are closed.', 'my-theme' ); ?></h2>
+		<h2 id="comments-title" class="nocomments"><?php esc_html_e( 'Комментарии отключены', 'them-es-starter-theme-bootstrap-5' ); ?></h2>
 	<?php
 		endif;
 
