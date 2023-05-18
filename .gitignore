@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 =======
+=======
+node_modules
+>>>>>>> 4e2cc91 (Adds Constra construction template)
 
 # Compiled source #
 ###################
@@ -99,4 +103,7 @@ Temporary Items
 
 node_modules
 /*.php
+<<<<<<< HEAD
 >>>>>>> 7350626 (Adds some .gitignore filters)
+=======
+>>>>>>> 4e2cc91 (Adds Constra construction template)
