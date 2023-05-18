@@ -101,9 +101,17 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
 
+<<<<<<< HEAD
 node_modules
 /*.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7350626 (Adds some .gitignore filters)
 =======
 >>>>>>> 4e2cc91 (Adds Constra construction template)
+=======
+=======
+#Project filters
+node_modules
+>>>>>>> 00798f9 (Adds russian localization)
+>>>>>>> 3bc402b (Adds russian localization)
