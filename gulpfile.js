@@ -7,7 +7,7 @@
 	import cssnano from 'cssnano';
 	import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
 	import browserSync from 'browser-sync';
-	const sass = gulpSass(dartSass);
+	const sass = gulpSass( dartSass );
 	const server = browserSync.create();
 	const localHost = 'http://localhost:8000/';
 

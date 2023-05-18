@@ -1,10 +1,11 @@
 {
-  "name": "themes-starter",
+  "name": "them-es-starter-theme-bootstrap-5",
   "version": "3.0.0",
   "license": "GPL-2.0",
   "description": "A WordPress Starter Theme built with Bootstrap 5.",
   "homepage": "https://them.es",
   "author": "them.es",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git://github.com/them-es/themes-starter.git"
@@ -16,8 +17,8 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "bootstrap": "^5.2.0",
     "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
     "jquery": "^3.6.0"
   },
   "devDependencies": {
@@ -25,11 +26,17 @@
     "browser-sync": "^2.27.10",
     "cssnano": "^5.1.13",
     "gulp": "^4.0.2",
+    "gulp-image": "^6.3.1",
+    "gulp-imagemin": "^8.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
     "postcss": "^8.4.16",
-    "sass": "^1.54.5",
+    "sass": "^1.62.0",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   }
