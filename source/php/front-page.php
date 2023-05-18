@@ -204,7 +204,7 @@
                 <h3 class="ts-facts-title">Города России</h3>
               </div>
           </div><!-- Col end -->
-          
+
         </div> <!-- Facts end -->
     </div>
     <!--/ Content row end -->
@@ -382,12 +382,12 @@
 
         <div class="col-lg-6">
           <div class="subscribe-call-to-acton align-items-center px-0">
-              <?php 
+            <?php
                 if ( function_exists(' \MailPoet\Form\Widget()' ) ) {
-                  $form_widget = new \MailPoet\Form\Widget();
-                  echo $form_widget->widget(array('form' => 1, 'form_type' => 'php'));
+                    $form_widget = new \MailPoet\Form\Widget();
+                    echo $form_widget->widget(array('form' => 1, 'form_type' => 'php'));
                 }
-              ?>
+            ?>
             </div><!-- Newsletter end -->
         </div><!-- Col end -->
 
@@ -415,7 +415,7 @@
             <div class="item">
               <div class="quote-item">
                   <span class="quote-text">
-                    <?php 
+                    <?php
                       $excerpt = $comment -> comment_content;
                       echo wp_trim_words( $excerpt , '50' );
                     ?>

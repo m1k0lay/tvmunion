@@ -82,11 +82,11 @@ Temporary Items
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -113,5 +113,37 @@ node_modules
 =======
 #Project filters
 node_modules
+<<<<<<< HEAD
 >>>>>>> 00798f9 (Adds russian localization)
+<<<<<<< HEAD
 >>>>>>> 3bc402b (Adds russian localization)
+=======
+=======
+
+404.php
+archive-loop.php
+archive.php
+author-bio.php
+author.php
+category.php
+comments.php
+content-index.php
+content-none.php
+content-single.php
+content.php
+footer.php
+front-page.php
+functions.php
+header.php
+image.php
+index.php
+page-full.php
+page-nosidebar.php
+page.php
+search.php
+searchform.php
+sidebar.php
+single.php
+tag.php
+>>>>>>> 4ca44c6 (Adds changes of resources)
+>>>>>>> b03ab87 (Adds changes of resources)
