@@ -509,7 +509,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 }
 
 // Custom Nav Walker: wp_bootstrap_navwalker().
-$custom_walker = __DIR__ . '/inc/wp_bootstrap_navwalker.php';
+
+$custom_walker = __DIR__ . '/inc/wp-bootstrap-navwalker.php';
 if ( is_readable( $custom_walker ) ) {
 	require_once $custom_walker;
 }
@@ -699,7 +700,7 @@ class WP_Widget_Recent_Orders extends WP_Widget {
 			$categories = get_categories( [
 				'taxonomy'     => 'category',
 				'type'         => 'post',
-				'child_of'     => 134,
+				'child_of'     => 18,
 				'parent'       => '',
 				'orderby'      => 'count',
 				'order'        => 'DESC',

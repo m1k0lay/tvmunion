@@ -204,7 +204,7 @@
                 <h3 class="ts-facts-title">Города России</h3>
               </div>
           </div><!-- Col end -->
-
+          
         </div> <!-- Facts end -->
     </div>
     <!--/ Content row end -->
@@ -382,12 +382,11 @@
 
         <div class="col-lg-6">
           <div class="subscribe-call-to-acton align-items-center px-0">
-              <?php
-                // if ( shortcode_exists( '[jetpack_subscription_form]' ) ) {
-                  echo apply_shortcodes( "[jetpack_subscription_form]" );
-              //  }
-              ?>
-            </div><!-- Newsletter end -->
+            <?php
+              //  echo apply_shortcodes( '[jetpack_subscription_form title="" subscribe_text="" subscribe_button="Подписаться"]');
+              echo apply_shortcodes( '[mailpoet_form id="1"]' );
+            ?>
+          </div><!-- Newsletter end -->
         </div><!-- Col end -->
 
     </div><!-- Content row end -->
@@ -414,7 +413,7 @@
             <div class="item">
               <div class="quote-item">
                   <span class="quote-text">
-                    <?php
+                    <?php 
                       $excerpt = $comment -> comment_content;
                       echo wp_trim_words( $excerpt , '50' );
                     ?>

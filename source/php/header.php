@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 	<meta name="yandex-verification" content="14753dc4db9cb755" />
+	<meta name="yandex-verification" content="998ac290854ced16" />
 	<meta name="mailru-domain" content="qbnMQFJKAyp9WTEz" />
 
   <?php wp_head();?>
@@ -24,36 +25,36 @@
 <body <?php body_class(); ?>>
 
   <div class="body-inner">
-    <div id="top-bar" class="top-bar">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-md-8">
-                <ul class="top-info text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">г. Ростов-на-Дону, пр. Космонавтов, д. 2, оф. 1002</p>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top info end -->
+	<div id="top-bar" class="top-bar">
+		<div class="container">
+		  <div class="row">
+			  <div class="col-lg-8 col-md-8">
+				<ul class="top-info text-md-left">
+					<li><i class="fas fa-map-marker-alt"></i> <p class="info-text">г. Ростов-на-Дону, пр. Космонавтов, д. 2, оф. 1002</p>
+					</li>
+				</ul>
+			  </div>
+			  <!--/ Top info end -->
 
-              <div class="col-lg-4 col-md-4 top-social text-md-right">
-                <!-- <ul class="list-unstyled">
-                    <li>
-                      <a title="VK" href="https://vk.com/tvmunion">
-                          <span class="social-icon"><i class="fab fa-vk-f"></i></span>
-                      </a>
-                      <a title="Instagram" href="https://instagram.com/tvmunion">
-                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                      </a>
-                    </li>
-                </ul> -->
-              </div>
-              <!--/ Top social end -->
-          </div>
-          <!--/ Content row end -->
-        </div>
-        <!--/ Container end -->
-    </div>
-    <!--/ Topbar end -->
+			  <div class="col-lg-4 col-md-4 top-social text-md-right">
+				<!-- <ul class="list-unstyled">
+					<li>
+					  <a title="VK" href="https://vk.com/tvmunion">
+						  <span class="social-icon"><i class="fab fa-vk-f"></i></span>
+					  </a>
+					  <a title="Instagram" href="https://instagram.com/tvmunion">
+						  <span class="social-icon"><i class="fab fa-instagram"></i></span>
+					  </a>
+					</li>
+				</ul> -->
+			  </div>
+			  <!--/ Top social end -->
+		  </div>
+		  <!--/ Content row end -->
+		</div>
+		<!--/ Container end -->
+	</div>
+	<!--/ Topbar end -->
 
 <!-- Header start -->
 		<header id="header" class="header-one">

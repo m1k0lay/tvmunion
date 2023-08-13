@@ -22,9 +22,9 @@
 						<p>Мы - команда профессионалов с 20 летним стажем в области обслуживания инженерных систем.</p>
 						<div class="footer-social">
 							<!-- <ul>
-								<li><a href="https://vk.com/tvmunion" aria-label="VK"><i
+								<li><a href="//vk.com/tvmunion" aria-label="VK"><i
 											class="fab fa-vk-f"></i></a></li>
-								<li><a href="https://instagram.com/tvmunion" aria-label="Instagram"><i
+								<li><a href="//instagram.com/tvmunion" aria-label="Instagram"><i
 											class="fab fa-instagram"></i></a></li>
 							</ul> -->
 						</div><!-- Footer social end -->
@@ -44,7 +44,7 @@
 							'taxonomy'     => 'category',
 							'type'         => 'post',
 							'child_of'     => 0,
-							'parent'       => 134,
+							'parent'       => 18,
 							'orderby'      => 'count',
 							'order'        => 'DESC',
 							'hide_empty'   => 0,
